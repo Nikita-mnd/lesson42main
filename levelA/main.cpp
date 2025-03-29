@@ -12,6 +12,9 @@ int main() {
 		return 0;
 	}
 	int** matrix = new int* [size];
+	for (int i = 0; i < size; ++i) {
+		matrix[i] = new int[size];
+	}
 
 	cout << "Input elements of matrix:" << endl;
 	for (int i = 0; i < size; i++) {
@@ -20,8 +23,10 @@ int main() {
 		}
 	}
 
-	int max = find_maximal_element_above_main_diagonal(matrix, size);
-	//delete[] matrix;
+	int max = find_max_element_above_main_diagonal(matrix, size);
+	cout << " max = " << max << endl;
+	int min = find_min_element_below_main_diagonal(matrix, size);
+	cout << "min = " << min << endl;
 	return 0;
 }
 
