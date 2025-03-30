@@ -23,10 +23,14 @@ int main() {
 		}
 	}
 
-	int max = find_max_element_above_main_diagonal(matrix, size);
-	cout << " max = " << max << endl;
-	int min = find_min_element_below_main_diagonal(matrix, size);
-	cout << "min = " << min << endl;
+	cout << " max element above main diagonal= "
+		<< find_max_element_above_main_diagonal(matrix, size) << endl;
+	cout << "min element below main diagonal = "
+		<< find_min_element_below_main_diagonal(matrix, size) << endl;
+	cout << " max element above said diagonal= "
+		<< find_max_element_above_said_diagonal(matrix, size) << endl;
+	cout << "min element below said diagonal = "
+		<< find_min_element_below_said_diagonal(matrix, size) << endl;
 	return 0;
 }
 
