@@ -23,13 +23,13 @@ int main() {
 		}
 	}
 
-	cout << "even positive above main diagonal: "
+	cout << "positive element above main diagonal: "
 		<< find_positive_element_above_main_diagonal(matrix, size) << endl;
-	cout << "even positive below main diagonal: "
+	cout << "positive element below main diagonal: "
 		<< find_positive_element_below_main_diagonal(matrix, size) << endl;
-	cout << "even positive above said diagonal: "
+	cout << "positive element above said diagonal: "
 		<< find_positive_element_above_said_diagonal(matrix, size) << endl;
-	cout << "even positive below said diagonal: "
+	cout << "positive element below said diagonal: "
 		<< find_positive_element_below_said_diagonal(matrix, size) << endl;
 
 	return 0;
